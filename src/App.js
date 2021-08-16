@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import FlasiranaPiva from './components/FlasiranaPiva'
+import TocenaPiva from './components/TocenaPiva'
+import { Switch, Route } from 'react-router-dom'
+import Menu from './components/Menu'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-fluid'>
+      <div>
+        <Switch>
+          <Route exact path='/'>
+            <Menu />
+          </Route>
+          <Route exact path='/tocena'>
+            <TocenaPiva />
+          </Route>
+          <Route exact path='/flasirana'>
+            <FlasiranaPiva />
+          </Route>
+        </Switch>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
