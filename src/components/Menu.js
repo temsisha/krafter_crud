@@ -1,5 +1,5 @@
-import Piva_Tocena from './PivaTocena'
-import Piva_Flasirana from './PivaFlasirana'
+import PivaTocena from './PivaTocena'
+import PivaFlasirana from './PivaFlasirana'
 
 function Menu() {
   return (
