@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import fireDb from '../firebase'
 
-function Piva_Flasirana() {
+function PivaFlasirana() {
   const [contactObjects, setContactObjects] = useState({})
   const [grupaName, setGrupaName] = useState('')
 
@@ -64,4 +64,4 @@ function Piva_Flasirana() {
   )
 }
 
-export default Piva_Flasirana
+export default PivaFlasirana

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import fireDb from '../firebase'
 
-function Piva_Tocena() {
+function PivaTocena() {
   const [contactObjects, setContactObjects] = useState({})
   const [grupaName, setGrupaName] = useState('')
 
@@ -33,7 +33,7 @@ function Piva_Tocena() {
           {grupaName}
         </h2>
         {Object.keys(contactObjects).map((id) => {
-          if (contactObjects[id].productState != true) {
+          if (contactObjects[id].productState !== true) {
             return (
               <div
                 key={id}
@@ -76,4 +76,4 @@ function Piva_Tocena() {
   )
 }
 
-export default Piva_Tocena
+export default PivaTocena

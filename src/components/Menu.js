@@ -1,11 +1,11 @@
-import Piva_Tocena from './Piva_Tocena'
-import Piva_Flasirana from './Piva_Flasirana'
+import Piva_Tocena from './PivaTocena'
+import Piva_Flasirana from './PivaFlasirana'
 
 function Menu() {
   return (
     <div>
-      <Piva_Tocena />
-      <Piva_Flasirana />
+      <PivaTocena />
+      <PivaFlasirana />
     </div>
   )
 }

@@ -76,20 +76,20 @@ const Contacts = () => {
                     <td>{contactObjects[id].productPrice}</td>
                     <td>{contactObjects[id].productDescription}</td>
                     <td>
-                      <a
+                      <button
                         className='btn text-promary'
                         onClick={() => {
                           setCurrentId(id)
                         }}
                       >
                         <i className='fas fa-pencil-alt'></i>
-                      </a>
-                      <a
+                      </button>
+                      <button
                         className='btn text-danger'
                         onClick={() => onDelete(id)}
                       >
                         <i className='fas fa-trash-alt'></i>
-                      </a>
+                      </button>
                     </td>
                   </tr>
                 )

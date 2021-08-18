@@ -40,7 +40,7 @@ function ContactForm({ currentId, contactObjects, addOrEdit, setSearchTerm }) {
   }
 
   const handleOnChange = (e) => {
-    var { name, value, checked } = e.target
+    var { name, checked } = e.target
     setValues({
       ...values,
       [name]: checked,
