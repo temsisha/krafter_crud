@@ -39,7 +39,7 @@ function PivaTocena() {
                 key={id}
                 className='flex justify-center items-center flex-col w-full'
               >
-                <div class='py-8 px-8 border-b border-gray-300 w-11/12'>
+                <div className='py-8 px-8 border-b border-gray-300 w-11/12'>
                   <div className='flex justify-between'>
                     <div className='flex flex-col'>
                       <p className='pr-1.5'>
